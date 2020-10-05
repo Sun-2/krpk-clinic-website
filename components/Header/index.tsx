@@ -3,7 +3,6 @@ import { Paper } from "../Paper";
 import React from "react";
 import { HeaderSideMenu, MenuLink } from "./components/HeaderSideMenu";
 import { Logo, LogoCenterPoint, LogoPaper, logoSize } from "./components/Logo";
-import {media} from "../../styles/media";
 
 export const Header = () => {
   return (
@@ -14,19 +13,19 @@ export const Header = () => {
       </hgroup>
       <HeaderRoot id="header">
         <HeaderSideMenu>
-          <MenuLink href={"/kontakt"}>Kontakt</MenuLink>
-          <MenuLink href={"/kontakt"}>Adres</MenuLink>
-          <MenuLink href={"/kontakt"}>Mapa</MenuLink>
+          <MenuLink href={"kontakt"}>Kontakt</MenuLink>
+          <MenuLink href={"kontakt"}>Adres</MenuLink>
+          <MenuLink href={"kontakt"}>Mapa</MenuLink>
         </HeaderSideMenu>
         <Logo />
         <HeaderSideMenu>
-          <MenuLink side="right" href={"/kontakt"}>
+          <MenuLink side="right" href={"kontakt"}>
             Poradnie specjalistyczne
           </MenuLink>
-          <MenuLink side="right" href={"/kontakt"}>
+          <MenuLink side="right" href={"poz"}>
             POZ
           </MenuLink>
-          <MenuLink side="right" href={"/kontakt"}>
+          <MenuLink side="right" href={"kontakt"}>
             Psychiatria
           </MenuLink>
         </HeaderSideMenu>

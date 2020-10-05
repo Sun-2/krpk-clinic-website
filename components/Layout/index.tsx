@@ -1,11 +1,9 @@
 import styled from "styled-components";
-import React, { FunctionComponent } from "react";
+import React, {FunctionComponent, memo} from "react";
 import { Paper } from "../Paper";
 import { Header, HeaderRoot, Name } from "../Header";
-import { Logo, LogoPaper } from "../Header/components/Logo";
-import { media } from "../../styles/media";
 
-export const Layout: FunctionComponent = ({ children }) => {
+export const Layout: FunctionComponent = memo(({ children }) => {
   return (
     <Root>
       <StyledPaper as={"main"}>
@@ -14,7 +12,7 @@ export const Layout: FunctionComponent = ({ children }) => {
       </StyledPaper>
     </Root>
   );
-};
+});
 
 const Root = styled.div`
   flex-grow: 1;
@@ -36,7 +34,7 @@ const StyledPaper = styled(Paper)`
   
   width: ${layoutWidth};
 
-  min-height: 600px;
+  min-height: 130vh;
   border-width: 1px;
   position: relative;
   

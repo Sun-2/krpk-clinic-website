@@ -25,7 +25,9 @@ export const MenuLink: FunctionComponent<LinkProps & { side?: MenuSide }> = (
     <>
       <LinksDivider side={side} />
       <Link {...rest} passHref>
-        <StyledLink side={side}>{children}</StyledLink>
+        <StyledLink side={side}>
+          {children}
+        </StyledLink>
       </Link>
     </>
   );

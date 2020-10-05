@@ -4,7 +4,17 @@ import { ThemeProvider } from "styled-components";
 import { theme } from "../styles/theme";
 import Head from "next/head";
 
-function MyApp({ Component, pageProps }) {
+console.log("_app");
+
+function MyApp({ Component }) {
+  const component = Component.layout ? (
+    <Component.layout>
+      <Component />
+    </Component.layout>
+  ) : (
+    <Component />
+  );
+
   return (
     <>
       <Head>
@@ -12,7 +22,7 @@ function MyApp({ Component, pageProps }) {
       </Head>
       <ThemeProvider theme={theme}>
         <GlobalStyles />
-        <Component {...pageProps} />
+        <div>{component}</div>
       </ThemeProvider>
     </>
   );

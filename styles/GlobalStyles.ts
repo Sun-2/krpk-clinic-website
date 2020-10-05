@@ -27,6 +27,8 @@ export const GlobalStyles = createGlobalStyle`
     background-repeat: repeat;
     background-size: auto;
     
+    overflow-y: scroll;
+    
     font-size: calc(16 / 10 * 100%);   
     
     &::after {
