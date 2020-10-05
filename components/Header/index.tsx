@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Paper } from "../Paper";
 import React from "react";
-import { Menu, MenuLink } from "../Menu";
+import { LinksDivider, Menu, MenuLink } from "../Menu";
 
 export const Header = () => {
   return (
@@ -10,22 +10,28 @@ export const Header = () => {
         <Name>Przychodnia Psychiatryczna</Name>
         <City>w Krapkowicach</City>
       </hgroup>
-      <NavRoot>
+      <HeaderRoot>
         <Menu>
           <MenuLink href={"/kontakt"}>Kontakt</MenuLink>
           <MenuLink href={"/kontakt"}>Adres</MenuLink>
           <MenuLink href={"/kontakt"}>Mapa</MenuLink>
         </Menu>
-        <LogoRoot>
+        <LogoRoot as="a" href="/">
           <Logo src="logo-1.png" alt="" />
         </LogoRoot>
-        <Menu side="right">
-          <MenuLink href={"/kontakt"}>Poradnie specjalistyczne</MenuLink>
-          <MenuLink href={"/kontakt"}>POZ</MenuLink>
-          <MenuLink href={"/kontakt"}>Psychiatria</MenuLink>
+        <Menu>
+          <MenuLink side="right" href={"/kontakt"}>
+            Poradnie specjalistyczne
+          </MenuLink>
+          <MenuLink side="right" href={"/kontakt"}>
+            POZ
+          </MenuLink>
+          <MenuLink side="right" href={"/kontakt"}>
+            Psychiatria
+          </MenuLink>
         </Menu>
-      </NavRoot>
-      <Divider src="divider-1-gray.png"></Divider>
+      </HeaderRoot>
+      <Divider src="divider-1-gray.png" />
     </div>
   );
 };
@@ -35,7 +41,8 @@ export const Name = styled.h1`
   text-align: center;
   font-size: 5.5rem;
   color: #000000c2;
-  margin-top: 50px;
+  margin-top: 40px;
+  user-select: none;
 `;
 
 const City = styled.h2`
@@ -44,6 +51,7 @@ const City = styled.h2`
   font-size: 3.5rem;
   color: #000000c2;
   margin-top: -3rem;
+  user-select: none;
 `;
 
 export const MenuSide = styled.div`
@@ -59,30 +67,40 @@ const Divider = styled.img`
   user-select: none;
 `;
 
-export const NavRoot = styled(Paper)`
+const headerRootWidth = "850px";
+export const HeaderRoot = styled(Paper)`
   margin-top: 55px;
   display: grid;
   grid-template-columns: 1fr auto 1fr;
-  margin-left: -30px;
-  margin-right: -30px;
-  height: 158px;
+  margin-left: calc((${headerRootWidth} - 100%) / -2);
+  margin-right: calc((${headerRootWidth} - 100%) / -2);
 
-  grid-gap: 20px;
+  width: ${headerRootWidth};
+
+  border-style: dashed solid;
 `;
 
 export const LogoRoot = styled(Paper)`
   border-radius: 50%;
   background-color: white;
+
   padding: 8px;
-  width: 220px;
-  height: 220px;
+  width: 230px;
+  height: 230px;
 
   user-select: none;
 
-  margin-top: -40px;
-  margin-bottom: -40px;
+  margin-top: -30px;
+  margin-bottom: -30px;
 
-  border: 1px solid #cacaca;
+  border: 1px dashed #cacaca;
+
+  transform: scale(1);
+  will-change: transform;
+  transition: transform 0.2s linear;
+  &:hover {
+    transform: scale(1.01);
+  }
 `;
 
 export const Logo = styled.img`

@@ -6,7 +6,7 @@ export const theme = {
   typography: {
     decorativeFont: "'Tangerine', cursive",
   },
-  spacing: (spacing: number) => 8 * spacing + "px",
+  spacing: (spacing: number) => 8 * spacing,
 };
 
 declare module "styled-components" {

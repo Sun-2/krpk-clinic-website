@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import React, { FunctionComponent } from "react";
 import { Paper } from "../Paper";
-import { Header, Logo, LogoRoot, NavRoot, MenuSide, Name } from "../Header";
+import { Header, Logo, LogoRoot, HeaderRoot, MenuSide, Name } from "../Header";
 
 export const Layout: FunctionComponent = ({ children }) => {
   return (
@@ -32,7 +32,7 @@ const StyledPaper = styled(Paper)`
   max-width: 100%;
   width: ${layoutWidth};
   min-height: 600px;
-  margin-top: 100px;
+  border-width: 1px;
   position: relative;
-  border-radius: 100px 100px 0 0;
+  //border-radius: 100px 100px 0 0;
 `;
