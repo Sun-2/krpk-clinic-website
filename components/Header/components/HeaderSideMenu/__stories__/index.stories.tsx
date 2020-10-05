@@ -1,4 +1,4 @@
-import { Menu, MenuLink } from "../index";
+import { HeaderSideMenu, MenuLink } from "../index";
 import React from "react";
 import { addDecorator } from "@storybook/react";
 import styled from "styled-components";
@@ -22,9 +22,9 @@ export default {
 };
 
 export const Menu1 = () => (
-  <Menu>
+  <HeaderSideMenu>
     <MenuLink href={"asd"}>Kontakt</MenuLink>
     <MenuLink href={"asd"}>Adres</MenuLink>
     <MenuLink href={"asd"}>Mapa</MenuLink>
-  </Menu>
+  </HeaderSideMenu>
 );

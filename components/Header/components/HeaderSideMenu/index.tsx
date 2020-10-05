@@ -1,12 +1,11 @@
 import React, { FunctionComponent, PropsWithChildren, ReactNode } from "react";
 import styled, { DefaultTheme } from "styled-components";
 import Link, { LinkProps } from "next/link";
-import { MenuSide } from "../Header";
-import { makeCssTuple } from "../../utils/makeCssTuple";
+import { cssArray } from "../../../../utils/cssArray";
 
 export type MenuSide = "left" | "right";
 
-export const Menu: FunctionComponent = (props) => {
+export const HeaderSideMenu: FunctionComponent = (props) => {
   const { children, ...rest } = props;
   return <Root {...rest}>{children}</Root>;
 };
@@ -38,15 +37,16 @@ MenuLink.defaultProps = {
 const StyledLink = styled.a<{ side: MenuSide }>`
   color: black;
   font-family: ${({ theme }) => theme.typography.decorativeFont};
+  font-family: "Cormorant Garamond";
   text-decoration: none;
-  font-size: 3rem;
+  font-size: 2rem;
   letter-spacing: 0.5px;
   position: relative;
 
   flex-grow: 1;
 
   margin: ${({ theme, side }) =>
-    makeCssTuple(
+    cssArray(
       side === "left" ? [0, 6, 0, 0] : [0, 0, 0, 6],
       "px",
       theme.spacing

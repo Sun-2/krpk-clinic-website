@@ -5,7 +5,8 @@ export default {
 };
 
 const Spam = () => (
-  <>
+  <div style={{ fontFamily: "'Tangerine'" }}>
+
     <div>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
       corporis debitis, earum est ipsam laudantium magni minus modi
@@ -62,7 +63,7 @@ const Spam = () => (
       deleniti dicta incidunt iure magni, maxime optio quisquam quos recusandae,
       repellat sapiente vel, veritatis?
     </div>
-  </>
+  </div>
 );
 
 export const Default = () => (

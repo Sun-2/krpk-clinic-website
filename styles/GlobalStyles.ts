@@ -40,7 +40,8 @@ export const GlobalStyles = createGlobalStyle`
     bottom: 0;
     left: 0;
     right: 0;
-    opacity: 0.9;
+    opacity: 1;
+    mix-blend-mode: luminosity;
   }
   
   }

@@ -1,7 +1,9 @@
 import styled from "styled-components";
 import React, { FunctionComponent } from "react";
 import { Paper } from "../Paper";
-import { Header, Logo, LogoRoot, HeaderRoot, MenuSide, Name } from "../Header";
+import { Header, HeaderRoot, Name } from "../Header";
+import { Logo, LogoPaper } from "../Header/components/Logo";
+import { media } from "../../styles/media";
 
 export const Layout: FunctionComponent = ({ children }) => {
   return (
@@ -18,7 +20,7 @@ const Root = styled.div`
   flex-grow: 1;
   align-self: stretch;
 
-  width: calc(100% - var(--scrollbar-width));
+  width: 100%;
   min-width: 800px;
   display: flex;
   flex-direction: column;
@@ -28,11 +30,19 @@ const Root = styled.div`
 
 export const layoutWidth = "750px";
 
+// width: 400px; looks nicely on mobile
 const StyledPaper = styled(Paper)`
   max-width: 100%;
+  
   width: ${layoutWidth};
+
   min-height: 600px;
   border-width: 1px;
   position: relative;
-  //border-radius: 100px 100px 0 0;
+  
+  &::after {
+    background-image: url("floral3.jpg");
+    filter: grayscale(100%);
+    opacity: 0.1;
+  }
 `;

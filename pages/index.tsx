@@ -3,6 +3,22 @@ import React from "react";
 import styled from "styled-components";
 import { Layout } from "../components/Layout";
 
+const Div = styled.div`
+  padding: 36px 60px;
+  font-family: "Cormorant Garamond";
+  font-size: 1.9rem;
+  line-height: 2.6rem;
+  
+  & > * + * {
+    margin-top: 24px;
+  }
+  & > img {
+    float: left;
+    padding: 16px;
+    margin: 16px;
+    border: 1px dashed gray;
+  }
+`;
 export default function Home() {
   return (
     <Wrapper>
@@ -11,13 +27,14 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-        <div style={{ padding: "20px" }}>
+        <Div>
           <div>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
             corporis debitis, earum est ipsam laudantium magni minus modi
             necessitatibus nesciunt, non quam vel vero? Delectus eveniet
             excepturi explicabo id possimus?
           </div>
+          <img src="https://picsum.photos/200/300?a=3" alt="" />
           <div>
             Et illo labore laborum minus molestias mollitia odit sunt. Accusamus
             adipisci dolor excepturi laboriosam libero modi neque quisquam.
@@ -36,12 +53,18 @@ export default function Home() {
             facere ipsam, ipsum iste laborum molestiae nam odit officia optio,
             quam unde veniam.
           </div>
+
           <div>
             A accusamus assumenda commodi cumque doloribus est id ipsam labore
             laborum possimus quaerat quam, recusandae rem rerum suscipit tempore
             tenetur voluptatum! Accusantium laboriosam laudantium maiores
             recusandae repellendus. Consequatur, doloribus, labore.
           </div>
+          <img
+            src="https://picsum.photos/300/200?a=2"
+            style={{ float: "right" }}
+            alt=""
+          />
           <div>
             Architecto aspernatur assumenda consequuntur, culpa deleniti error
             incidunt, modi praesentium quibusdam quo recusandae reprehenderit
@@ -73,7 +96,7 @@ export default function Home() {
             Accusamus deleniti dicta incidunt iure magni, maxime optio quisquam
             quos recusandae, repellat sapiente vel, veritatis?
           </div>
-        </div>
+        </Div>
       </Layout>{" "}
     </Wrapper>
   );

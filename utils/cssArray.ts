@@ -1,4 +1,4 @@
-export const makeCssTuple = <T>(
+export const cssArray = <T>(
   array: T[],
   unit: string,
   func: (arg: T) => number | string
