@@ -16,7 +16,7 @@ export const Paper = styled.div`
 
   &::after {
     border-radius: inherit;
-    background-image: url("paper.jpg");
+    background-image: url("txt.jpg");
     background-repeat: repeat;
     content: "";
     position: absolute;
@@ -26,6 +26,6 @@ export const Paper = styled.div`
     bottom: 0;
     left: 0;
     right: 0;
-    opacity: 0.13;
+    opacity: 0.3;
   }
 `;

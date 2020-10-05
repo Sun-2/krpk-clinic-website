@@ -30,7 +30,7 @@ export const GlobalStyles = createGlobalStyle`
     font-size: calc(16 / 10 * 100%);   
     
     &::after {
-    background-image: url("paper.jpg");
+    background-image: url("txt.jpg");
     background-repeat: repeat;
     content: "";
     position: absolute;
@@ -40,7 +40,7 @@ export const GlobalStyles = createGlobalStyle`
     bottom: 0;
     left: 0;
     right: 0;
-    opacity: 0.25;
+    opacity: 0.9;
   }
   
   }
