@@ -5,10 +5,14 @@ import { ArticleTitle } from "../components/Article/components/ArticleTitle";
 import { ArticleContent } from "../components/Article/components/ArticleContent";
 import { ArticleImage } from "../components/ArticleImage";
 import { useGeneratedContent } from "../utils/generateContent";
+import Head from "next/head";
 
 export default function Zakladka2() {
   return (
     <>
+      <Head>
+        <title>Zakładka 2 - Przychodnia Psychiatryczna w Krapkowicach</title>
+      </Head>
       <ArticleTitle>Zakładka 2</ArticleTitle>
       <ArticleContent>
         <p>

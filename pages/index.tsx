@@ -23,7 +23,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Przychodnia</title>
+        <title>Przychodnia Psychiatryczna w Krapkowicach</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Div>

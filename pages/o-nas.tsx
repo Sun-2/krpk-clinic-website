@@ -4,10 +4,14 @@ import React from "react";
 import { ArticleTitle } from "../components/Article/components/ArticleTitle";
 import { ArticleContent } from "../components/Article/components/ArticleContent";
 import { ArticleImage } from "../components/ArticleImage";
+import Head from "next/head";
 
 export default function ONas() {
   return (
     <>
+      <Head>
+        <title>Przychodnia Psychiatryczna w Krapkowicach</title>
+      </Head>
       <ArticleTitle>O nas</ArticleTitle>
       <ArticleContent>
         <p>

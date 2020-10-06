@@ -4,10 +4,14 @@ import React from "react";
 import { ArticleTitle } from "../components/Article/components/ArticleTitle";
 import { ArticleContent } from "../components/Article/components/ArticleContent";
 import { ArticleImage } from "../components/ArticleImage";
+import Head from "next/head";
 
 export default function Zakladka3() {
   return (
     <>
+      <Head>
+        <title>Zakładka 3 - Przychodnia Psychiatryczna w Krapkowicach</title>
+      </Head>
       <ArticleTitle>Zakładka 3</ArticleTitle>
       <ArticleContent>
         <ArticleImage
