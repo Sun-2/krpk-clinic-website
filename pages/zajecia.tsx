@@ -5,10 +5,10 @@ import { ArticleTitle } from "../components/Article/components/ArticleTitle";
 import { ArticleContent } from "../components/Article/components/ArticleContent";
 import { ArticleImage } from "../components/ArticleImage";
 
-export default function Kontakt() {
+export default function Zajecia() {
   return (
     <>
-      <ArticleTitle>Kontakt</ArticleTitle>
+      <ArticleTitle>Zajęcia</ArticleTitle>
       <ArticleContent>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
@@ -90,4 +90,4 @@ export default function Kontakt() {
   );
 }
 
-Kontakt.layout = Layout;
+Zajecia.layout = Layout;

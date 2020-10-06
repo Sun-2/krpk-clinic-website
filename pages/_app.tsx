@@ -4,8 +4,6 @@ import { ThemeProvider } from "styled-components";
 import { theme } from "../styles/theme";
 import Head from "next/head";
 
-console.log("_app");
-
 function MyApp({ Component }) {
   const component = Component.layout ? (
     <Component.layout>
@@ -22,7 +20,7 @@ function MyApp({ Component }) {
       </Head>
       <ThemeProvider theme={theme}>
         <GlobalStyles />
-        <div>{component}</div>
+        {component}
       </ThemeProvider>
     </>
   );

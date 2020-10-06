@@ -1,6 +1,7 @@
 import { Layout } from "../components/Layout";
 import React from "react";
 import styled from "styled-components";
+import { ArticleTitle } from "../components/Article/components/ArticleTitle";
 const Div = styled.div`
   padding: 36px 60px;
   font-family: "Cormorant Garamond";
@@ -18,9 +19,10 @@ const Div = styled.div`
   }
 `;
 
-export default function Kontakt() {
+export default function Poz() {
   return (
     <Div>
+      <ArticleTitle>Hello</ArticleTitle>
       <div>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
         corporis debitis, earum est ipsam laudantium magni minus modi
@@ -80,4 +82,4 @@ export default function Kontakt() {
   );
 }
 
-Kontakt.layout = Layout;
+Poz.layout = Layout;

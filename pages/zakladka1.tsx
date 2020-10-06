@@ -5,10 +5,10 @@ import { ArticleTitle } from "../components/Article/components/ArticleTitle";
 import { ArticleContent } from "../components/Article/components/ArticleContent";
 import { ArticleImage } from "../components/ArticleImage";
 
-export default function Kontakt() {
+export default function Zakladka1() {
   return (
     <>
-      <ArticleTitle>Kontakt</ArticleTitle>
+      <ArticleTitle>Zakładka 1</ArticleTitle>
       <ArticleContent>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
@@ -17,7 +17,7 @@ export default function Kontakt() {
           explicabo id possimus?
         </p>
         <ArticleImage
-          src="https://picsum.photos/200/300?a=3"
+          src={`https://picsum.photos/200/300?a=${Math.random()}`}
           height={330}
           width={230}
           alt=""
@@ -61,7 +61,7 @@ export default function Kontakt() {
           sunt tempora vitae.
         </p>
         <ArticleImage
-          src="https://picsum.photos/300/200?a=2"
+          src={`https://picsum.photos/300/200?a=${Math.random()}`}
           height={230}
           width={330}
           style={{ float: "right" }}
@@ -90,4 +90,4 @@ export default function Kontakt() {
   );
 }
 
-Kontakt.layout = Layout;
+Zakladka1.layout = Layout;
