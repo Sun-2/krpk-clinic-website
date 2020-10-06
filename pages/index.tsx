@@ -32,7 +32,7 @@ export default function Home() {
       <ArticleTitle>Tytuł</ArticleTitle>
       <ArticleContent>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
+          Lorem ippsum dolor sit amet, consectetur adipisicing elit. Adipisci
           corporis debitis, earum est ipsam laudantium magni minus modi
           necessitatibus nesciunt, non quam vel vero? Delectus eveniet excepturi
           explicabo id possimus?
