@@ -27,6 +27,7 @@ export const LogoPaper = styled(Paper)`
   border: 1px dashed #cacaca;
 `;
 
+//todo
 export const OrnamentalCircle = styled.img`
   position: absolute;
   top: 50%;

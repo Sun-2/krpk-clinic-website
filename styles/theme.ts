@@ -4,7 +4,10 @@ type MyTheme = typeof theme;
 
 export const theme = {
   typography: {
-    decorativeFont: "'Tangerine', cursive",
+    families: {
+      primary: "'Cormorant Garamond'",
+      decorative: "'Tangerine', cursive",
+    },
   },
   breakpoints: {
     xs: 0,

@@ -9,7 +9,7 @@ export const Paper = styled.div`
 
   background-repeat: repeat;
   background-size: auto;
-  box-shadow: 2px 4px 7px #00000066;
+  box-shadow: 1px 1px 8px #00000066;
   z-index: 100;
 
   isolation: isolate;

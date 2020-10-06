@@ -29,7 +29,8 @@ export const GlobalStyles = createGlobalStyle`
     
     overflow-y: scroll;
     
-    font-size: calc(16 / 10 * 100%);   
+    font-size: calc(16 / 10 * 100%);
+    font-family: ${({ theme }) => theme.typography.families.primary};   
     
     &::after {
     background-image: url("txt.jpg");
